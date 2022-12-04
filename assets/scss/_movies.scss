@@ -1,0 +1,41 @@
+#moviesDisplay {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .movieContainer {
+
+        background-color: #6E7E85;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    h2 {
+        font-size: 50px;
+        color: #b7cece;
+        font-family: "mont_b";
+    }
+
+    h3 {
+        color: 1C0F13;
+        font-size: 30px;
+        font-family: "mont_b";
+    }
+
+    img {
+
+        width: 150px;
+        height: 200px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    img:hover {
+        transform: scale(1.5);
+    }
+}

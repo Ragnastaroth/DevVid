@@ -1,0 +1,33 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        .settingsContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        p {
+            margin: 0 5rem;
+        }
+
+        .slider {
+
+        width: 40px;
+        height: 15px;
+        border-radius: 10px;
+        background-color: #bbbac6;
+        }
+
+
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+    

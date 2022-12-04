@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <link rel="stylesheet" href="assets/libs/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevVid</title>
+</head>
+<body>
+
+    <!-- Header w/ NavBar & banner/logo & a searchbar -->
+
+    <header>
+        <h1>
+            <div id="bannerLogo">
+                <img class="logo" src="assets/img/DevVid (2).png" alt="logo du site DevVid">
+            </div>
+        </h1>
+        <nav>
+            <ul>
+              <div id="burger" class="dNone">
+                <div>
+                  <i class="fa-solid fa-bars"></i>
+                  <div>
+                    <ul id="burgerList" class="dNone">
+                      <a href="index.html">Accueil</a>
+                      <a href="shows.html">Séries</a>
+                      <a href="movies.html">Films par catégories</a>
+                      <a href="settings.html">Paramètres</a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <a href="index.html">Accueil</a>
+              <a href="shows.html">Séries</a>
+              <a href="movies.html">Films par catégories</a>
+              <a href="settings.html">Paramètres</a>
+              <div id="userNameDisplay" class="dNone"></div>
+              <div id="loginContainer">
+                <button class="btn" id="loginPop">Se connecter</button>
+                <div id="formContainer"  class="dNone">
+                    <form action="" target="_blank">
+                        <input type="text" id="name" placeholder="Ecrivez votre nom d'utilisateur">
+                        <input type="password" id="pw" placeholder="Ecrivez votre mot de passe">
+                        <button type="button" id="loginBtn">Se connecter</button>
+                        <a href="">Mot de passe oublié</a>
+                        <p>Se connecter avec:</p>
+                        <div class="socialContainer">
+                            <div>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-google"></i>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+              </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main section w/ carousel -->
+    
+    <main>
+      <section id="carousel" class="slider-wrapper">
+        <button class="slide-arrow" id="slide-arrow-prev">
+          &#8249;
+        </button>
+        <button class="slide-arrow" id="slide-arrow-next">
+          &#8250;
+        </button>
+        <ul class="slides-container" id="slides-container">
+          <li class="slide">
+            <div class="imgContainer">
+              <img src="assets\img\coco.jpg" alt="">
+            </div>
+          </li>
+          <li class="slide">
+            <div class="imgContainer">
+              <img src="assets\img\forrest.jpg" alt="">
+            </div>
+          </li>
+          <li class="slide">
+            <div class="imgContainer">
+              <img src="assets\img\greenline.jpg" alt="">
+            </div>
+          </li>
+          <li class="slide">
+            <div class="imgContainer">
+              <img src="assets\img\interstellar.jpg" alt="">
+            </div>
+          </li>
+          <li class="slide">
+            <div class="imgContainer">
+              <img src="assets\img\LoTR.jpg" alt="">
+            </div>
+          </li>
+          <li class="slide">
+            <div class="imgContainer">
+              <img src="assets\img\prisoners.jpg" alt="">
+            </div>
+          </li>
+          <li class="slide">
+            <div class="imgContainer">
+              <img src="assets\img\schindler.jpg" alt="">
+            </div>
+          </li>
+          <li class="slide">
+            <div class="imgContainer">
+              <img src="assets\img\seven.jpg" alt="">
+            </div>
+          </li>
+          <li class="slide">
+            <div class="imgContainer">
+              <img src="assets\img\shining.jpg" alt="">
+            </div>
+          </li>
+          <li class="slide">
+            <div class="imgContainer">
+              <img src="assets\img\tenet.jpg" alt="">
+            </div>
+          </li>
+          <li class="slide">
+            <div class="imgContainer">
+              <img src="assets\img\tick.jpg" alt="">
+            </div>
+          </li>
+          <li class="slide">
+            <div class="imgContainer">
+              <img src="assets\img\titanic.jpg" alt="">
+            </div>
+          </li>
+          <li class="slide">
+            <div class="imgContainer">
+              <img src="assets\img\VBT.jpg" alt="">
+            </div>
+          </li>
+        </ul>
+      </section>
+
+            <!-- suggestions/news/classics section w/ miniatures and titles -->
+
+      <section>
+        <article>
+          <h2>Pour vous</h2>
+          <p>Une sélection de titres qui pourraient vous intéresser</p>
+          <div id="suggestionContainer"></div>
+        </article>
+        <article>
+          <h2>Nouveautés</h2>
+          <p>Une sélection de titres récents à explorer</p>
+          <div id="newsContainer"></div>
+        </article>
+        <article>
+          <h2>Classiques</h2>
+          <p>Les classiques à voir ou à revoir</p>
+          <div id="classicContainer"></div>
+        </article>
+        <article>
+          <h2>Nos séries du moment</h2>
+          <p>À binge watcher sans modération !</p>
+          <div id="newShowContainer"></div>
+        </article>
+      </section>
+
+    </main>
+
+    <!-- footer section -->
+
+    <footer>
+      <div id="socials">
+        <div>
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+
+      <div class="footerTxt">
+        <div>
+          <p>Audiodescription</p>
+          <p>Relations investisseurs</p>
+          <p>Informations légales</p>
+        </div>
+        <div>
+          <p>Centre d'aide</p>
+          <p>Recrutement</p>
+          <p>Préférences de cookies</p>
+        </div>
+        <div>
+          <p>Cartes cadeaux</p>
+          <p>Conditions d'utilisation</p>
+          <p>Mentions légales</p>
+        </div>
+        <div>
+          <p>Presse</p>
+          <p>Confidentialité</p>
+          <p>Nous contacter</p>
+        </div>
+      </div>
+
+      <a href="">Code de service</a>
+
+      <p>© 2022 - pour le temps que ça durera DevVid, Inc.</p>
+    </footer>
+    
+</body>
+<script type="module" src="assets/js/movieList.js"></script>
+<script type="module" src="assets/js/script.js"></script>
+<script src="assets/js/carousel.js"></script>
+<script src="assets/js/loginScript.js"></script>
+</html>

@@ -1,0 +1,75 @@
+#moviesContainer {
+
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    
+    .movieContainer {
+
+        background-color: #b7cece;
+        border-radius: 15px;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        h3 {
+            color: #1C0F13;
+        }
+
+        img {
+            width: 200px;
+            height: 250px;
+        }
+
+
+        .adminBtn {
+
+        padding: 0;
+        color: #1C0F13;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    }
+
+ 
+
+}
+
+#usersContainer {
+
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+
+    .userContainer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #6E7E85;
+        padding: 1.5rem;
+        border-radius: 15px;
+
+        .adminBtn {
+
+            padding: 0;
+            color: #1C0F13;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+
+        .userPic {
+            font-size: 30px;
+            color: #1C0F13;
+        }
+
+    }
+
+}

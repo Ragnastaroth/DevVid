@@ -1,0 +1,44 @@
+#showsHeader {
+    text-align: center;
+    color: #B7CECE;
+    font-family: "mont_b";
+    font-size: 40px;
+    margin: 5rem auto;
+}
+
+#showsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    .showContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        h3 {
+            color: #B7CECE;
+        }
+
+        img {
+            border-radius: 10px;
+            width: 250px;
+            height: 350px;
+        }
+
+        button {
+            background-color: #BBBAC6;
+            color: #1c0f13;
+            padding: 0.75rem 1.25rem;
+            border-radius: 10px;
+            font-family: "mont_b";
+            transition: all 0.5s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #1c0f13;
+            color: #b7cece;
+            border: 1px solid #BBBAC6;
+        }
+    }
+}

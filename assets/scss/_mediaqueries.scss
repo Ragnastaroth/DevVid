@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+
+    nav>ul>a {
+        display: none;
+    }
+
+    #burger {
+        display: block;
+    }
+
+    nav>#loginPop {
+        display: none;
+    }
+
+    #carousel {
+        display: none;
+    }
+
+}

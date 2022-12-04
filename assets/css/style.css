@@ -1,0 +1,723 @@
+@font-face {
+  font-family: "mont";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "mont_b";
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "mont";
+  background-color: #1c0f13;
+}
+
+#bannerLogo {
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 40vh;
+}
+
+nav {
+  background-color: #6e7e85;
+  width: 75vw;
+  border-radius: 15px;
+  margin: 2rem auto;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+ul a {
+  background-color: none;
+  font-size: 20px;
+  font-family: "mont_b";
+  transition: all 0.5s ease-in-out;
+}
+ul a:hover {
+  color: #b7cece;
+}
+ul .btn {
+  background-color: none;
+  font-size: 20px;
+  font-family: "mont_b";
+  transition: all 0.5s ease-in-out;
+}
+ul .btn:hover {
+  color: #b7cece;
+}
+
+.btn {
+  background-color: #BBBAC6;
+  color: #1c0f13;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  font-family: "mont_b";
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #1c0f13;
+  color: #b7cece;
+}
+
+.slider-wrapper {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides-container {
+  height: 30%;
+  width: 50%;
+  display: flex;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.slides-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+img {
+  height: 700px;
+  width: 550px;
+  border-radius: 15px;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+}
+
+.slide-arrow {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 4rem;
+  background-color: white;
+  border: none;
+  width: 2rem;
+  font-size: 3rem;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 100ms;
+}
+
+.slide-arrow:hover,
+.slide-arrow:focus {
+  opacity: 1;
+}
+
+#slide-arrow-prev {
+  left: 35%;
+  padding-left: 0.25rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+#slide-arrow-next {
+  right: 35%;
+  padding-left: 0.75rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+}
+
+h1 {
+  margin: 0;
+  background-color: white;
+}
+h1 div {
+  padding: 1rem;
+}
+h1 div img {
+  border-radius: 15px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+article h2 {
+  font-family: "mont_b";
+  color: #b7cece;
+  margin: 0;
+  text-align: center;
+}
+article p {
+  font-family: "mont_b";
+  color: #b7cece;
+  text-align: center;
+  margin: 0;
+}
+
+article {
+  margin: 4rem;
+}
+article #suggestionContainer {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #6E7E85;
+  border-radius: 15px;
+}
+article #suggestionContainer .suggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+article #suggestionContainer .suggestion h3 {
+  font-size: small;
+  color: #1C0F13;
+  font-family: "mont";
+}
+article #suggestionContainer .suggestion img {
+  height: 200px;
+  width: 150px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+article #suggestionContainer .suggestion img:hover {
+  transform: scale(1.5);
+}
+
+#newsContainer {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #6E7E85;
+  border-radius: 15px;
+}
+#newsContainer .news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#newsContainer .news h3 {
+  font-size: small;
+  color: #1C0F13;
+  font-family: "mont";
+}
+#newsContainer .news img {
+  height: 200px;
+  width: 150px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+#newsContainer .news img:hover {
+  transform: scale(1.5);
+}
+
+#classicContainer {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #6E7E85;
+  border-radius: 15px;
+}
+#classicContainer .classics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#classicContainer .classics h3 {
+  font-size: small;
+  color: #1C0F13;
+  font-family: "mont";
+}
+#classicContainer .classics img {
+  height: 200px;
+  width: 150px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+#classicContainer .classics img:hover {
+  transform: scale(1.5);
+}
+
+#newShowContainer {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #6E7E85;
+  border-radius: 15px;
+  overflow: scroll;
+}
+#newShowContainer .showContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#newShowContainer .showPic {
+  height: 200px;
+  width: 150px;
+  border-radius: 10px;
+  margin: 0 0.75rem;
+  transition: all 0.5s ease-in-out;
+}
+#newShowContainer .showPic:hover {
+  transform: scale(1.5);
+}
+#newShowContainer h3 {
+  font-size: small;
+  color: #1C0F13;
+  font-family: "mont";
+}
+
+#moviesDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#moviesDisplay .movieContainer {
+  background-color: #6E7E85;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+#moviesDisplay h2 {
+  font-size: 50px;
+  color: #b7cece;
+  font-family: "mont_b";
+}
+#moviesDisplay h3 {
+  color: 1C0F13;
+  font-size: 30px;
+  font-family: "mont_b";
+}
+#moviesDisplay img {
+  width: 150px;
+  height: 200px;
+  transition: all 0.5s ease-in-out;
+}
+#moviesDisplay img:hover {
+  transform: scale(1.5);
+}
+
+#showsHeader {
+  text-align: center;
+  color: #B7CECE;
+  font-family: "mont_b";
+  font-size: 40px;
+  margin: 5rem auto;
+}
+
+#showsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+#showsContainer .showContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#showsContainer .showContainer h3 {
+  color: #B7CECE;
+}
+#showsContainer .showContainer img {
+  border-radius: 10px;
+  width: 250px;
+  height: 350px;
+}
+#showsContainer .showContainer button {
+  background-color: #BBBAC6;
+  color: #1c0f13;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  font-family: "mont_b";
+  transition: all 0.5s ease-in-out;
+}
+#showsContainer .showContainer button:hover {
+  background-color: #1c0f13;
+  color: #b7cece;
+  border: 1px solid #BBBAC6;
+}
+
+#showInfosContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#showInfosContainer h2 {
+  font-family: "mont_b";
+  font-size: 50px;
+}
+#showInfosContainer .fa-star {
+  color: gold;
+}
+#showInfosContainer p {
+  margin: 1rem auto;
+  font-size: 20px;
+}
+
+#seasonBtn {
+  margin: 2rem auto;
+  background-color: #BBBAC6;
+  color: #1c0f13;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  font-family: "mont_b";
+}
+
+#seasonBtn:hover {
+  background-color: #1c0f13;
+  color: #b7cece;
+  border: 1px solid #BBBAC6;
+}
+
+.dNone {
+  display: none;
+}
+
+#showSeasons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.seasonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.seasonContainer span {
+  color: #BBBAC6;
+  font-size: 20px;
+}
+.seasonContainer button {
+  margin: 2rem auto;
+  background-color: #BBBAC6;
+  color: #1c0f13;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  font-family: "mont_b";
+}
+.seasonContainer button:hover {
+  background-color: #1c0f13;
+  color: #b7cece;
+  border: 1px solid #BBBAC6;
+}
+
+.episodeContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.episodeContainer img {
+  width: 350px;
+  height: 225px;
+}
+.episodeContainer h3 {
+  color: #b7cece;
+  font-family: "mont_b";
+}
+.episodeContainer p {
+  width: 500px;
+}
+.episodeContainer .watchBtn {
+  margin: 2rem auto;
+  background-color: #BBBAC6;
+  color: #1c0f13;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  font-family: "mont_b";
+}
+.episodeContainer .watchBtn:hover {
+  background-color: #1c0f13;
+  color: #b7cece;
+  border: 1px solid #BBBAC6;
+}
+
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formContainer {
+  background-color: #b7cece;
+  border-radius: 10px;
+  width: 15%;
+  height: 35%;
+  padding: 4rem 2rem;
+  position: absolute;
+  z-index: 2;
+  transform: translate(-32%, 3%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+form input {
+  padding: 0.25rem;
+  border-radius: 10px;
+}
+form button {
+  width: 181px;
+  background-color: #bbbac6;
+  color: #1c0f13;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  font-family: "mont_b";
+  border: none;
+  font-size: 20px;
+  margin-top: 3rem;
+}
+form a {
+  background-color: #bbbac6;
+  padding: 0.25rem 0.5rem;
+  font-family: "mont_b";
+  color: #1c0f13;
+  border-radius: 10px;
+}
+form p {
+  text-align: center;
+  font-size: 20px;
+  font-family: "mont_b";
+}
+
+.socialContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+.socialContainer .fa-twitter {
+  font-size: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #1da1f3;
+  padding: 0.5rem;
+}
+.socialContainer .fa-google {
+  font-size: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #dd4d3f;
+  padding: 0.5rem;
+}
+.socialContainer .fa-square-facebook {
+  font-size: 55px;
+  color: #3c5a9a;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+#userNameDisplay {
+  font-family: "mont_b";
+  font-size: 25px;
+  color: #1c0f13;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .settingsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+section p {
+  margin: 0 5rem;
+}
+section .slider {
+  width: 40px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #bbbac6;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+#moviesContainer {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+}
+#moviesContainer .movieContainer {
+  background-color: #b7cece;
+  border-radius: 15px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#moviesContainer .movieContainer h3 {
+  color: #1C0F13;
+}
+#moviesContainer .movieContainer img {
+  width: 200px;
+  height: 250px;
+}
+#moviesContainer .movieContainer .adminBtn {
+  padding: 0;
+  color: #1C0F13;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#usersContainer {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+}
+#usersContainer .userContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6E7E85;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+#usersContainer .userContainer .adminBtn {
+  padding: 0;
+  color: #1C0F13;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#usersContainer .userContainer .userPic {
+  font-size: 30px;
+  color: #1C0F13;
+}
+
+footer {
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+footer #socials {
+  color: #E2E2E2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 30px;
+}
+footer .footerTxt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+footer .footerTxt div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+footer .footerTxt p {
+  color: #E2E2E2;
+  margin: 0;
+}
+footer a {
+  border: 1px solid #E2E2E2;
+  color: #E2E2E2;
+  padding: 0.25rem 1rem;
+  margin: 1.54rem auto;
+}
+footer p {
+  color: #E2E2E2;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  nav > ul > a {
+    display: none;
+  }
+  #burger {
+    display: block;
+  }
+  nav > #loginPop {
+    display: none;
+  }
+  #carousel {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

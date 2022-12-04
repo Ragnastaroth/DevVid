@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/libs/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevVid Films</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <div id="bannerLogo">
+                <img class="logo" src="assets/img/DevVid (2).png" alt="logo du site DevVid">
+            </div>
+        </h1>
+        <nav>
+            <ul>
+              <div id="burger" class="dNone">
+                <a href="">
+                  <i class="fa-solid fa-bars"></i>
+                </a>
+              </div>
+              <a href="index.html">Accueil</a>
+              <a href="shows.html">Séries</a>
+              <a href="movies.html">Films par catégories</a>
+              <a href="settings.html">Paramètres</a>
+              <div id="userNameDisplay" class="dNone"></div>
+              <div id="loginContainer">
+                <button class="btn" id="loginPop">Se connecter</button>
+                <div id="formContainer"  class="dNone">
+                    <form action="" target="_blank">
+                        <input type="text" id="name" placeholder="Ecrivez votre nom d'utilisateur">
+                        <input type="password" id="pw" placeholder="Ecrivez votre mot de passe">
+                        <button type="button" id="loginBtn">Se connecter</button>
+                        <a href="">Mot de passe oublié</a>
+                        <p>Se connecter avec:</p>
+                        <div class="socialContainer">
+                            <div>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-google"></i>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+              </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <article id="moviesDisplay">
+
+      </article>
+    </main>
+
+    <footer>
+      <div id="socials">
+        <div>
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+
+      <div class="footerTxt">
+        <div>
+          <p>Audiodescription</p>
+          <p>Relations investisseurs</p>
+          <p>Informations légales</p>
+        </div>
+        <div>
+          <p>Centre d'aide</p>
+          <p>Recrutement</p>
+          <p>Préférences de cookies</p>
+        </div>
+        <div>
+          <p>Cartes cadeaux</p>
+          <p>Conditions d'utilisation</p>
+          <p>Mentions légales</p>
+        </div>
+        <div>
+          <p>Presse</p>
+          <p>Confidentialité</p>
+          <p>Nous contacter</p>
+        </div>
+      </div>
+
+      <a href="">Code de service</a>
+
+      <p>© 2022 - pour le temps que ça durera DevVid, Inc.</p>
+    </footer>
+</body>
+<script type="module" src="assets/js/movies.js"></script>
+<script type="module" src="assets/js/movieList.js"></script>
+<script src="assets/js/loginScript.js"></script>
